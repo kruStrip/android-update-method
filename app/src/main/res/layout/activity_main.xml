@@ -13,41 +13,51 @@
         android:id="@+id/edit_name_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="type name: "
-        android:textSize="16sp"/>
-    <EditText
-        android:id="@+id/edit_new_name_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="@string/type_new_name"
-        android:textSize="16sp"/>
+        android:layout_margin="20dp"
+        android:backgroundTint="#E392F0"
+        android:backgroundTintMode="src_in"
+        android:breakStrategy="balanced"
+        android:bufferType="normal"
+        android:hint="@string/type_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#5900FF"
+        android:textColorHighlight="#FF0000"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:autofillHints="name"/>
+<!--    <EditText-->
+<!--        android:id="@+id/edit_new_name_id"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="@string/type_new_name"-->
+<!--        android:textSize="16sp"/>-->
 
-    <EditText
-        android:id="@+id/edit_surname_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="type new surname:"
-        android:textSize="16sp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/edit_surname_id"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="type new surname:"-->
+<!--        android:textSize="16sp"
+            />-->
 
-    <EditText
-        android:id="@+id/edit_age_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="type new age:"
-        android:textSize="16sp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/edit_age_id"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="type new age:"-->
+<!--        android:textSize="16sp"/>-->
 
     <Button
         android:id="@+id/button2_id"
-        android:layout_width="match_parent"
+        android:layout_width="422dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/update_user"
-        android:textSize="16sp" />
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:text="@string/delete_user" />
+
 
     <Button
         android:id="@+id/button_id"
@@ -55,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/get_users"
+        android:text="@string/get_user"
         android:textSize="16sp" />
 
     <TextView
@@ -64,7 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:cursorVisible="true"
-        android:text="@string/my_users"
+        android:text="@string/list_of_users"
         android:textSize="24sp"
         android:visibility="visible" />
+
 </LinearLayout>

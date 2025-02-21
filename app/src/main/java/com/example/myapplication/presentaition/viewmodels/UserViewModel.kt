@@ -31,16 +31,4 @@ class UserViewModel(private val getUsersUseCase: GetUsersUseCase) : ViewModel() 
         Log.d("Tag", result[0].toString())
         _users.value= result
     }
-
-//    fun updateUser(user: User) {
-//        viewModelScope.launch {
-//            val updatedList = _users.value.map {
-//                if (it.name == user.name && it.surname == user.surname) {
-//                    user
-//                } else {
-//                    it
-//                }
-//            }
-//            _users.value = updatedList
-//        }
 }
